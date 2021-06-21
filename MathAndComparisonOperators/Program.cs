@@ -24,13 +24,13 @@ namespace MathAndComparisonOperators
             //Console.WriteLine(product);
             //Console.ReadLine();
 
-            int quotient = 100 / 17;
-            Console.WriteLine(quotient);
-            Console.ReadLine();
+            //int quotient = 100 / 17;
+            //Console.WriteLine(quotient);
+            //Console.ReadLine();
 
-            double quotient1 = 100.0 / 17.0;
-            Console.WriteLine(quotient1);
-            Console.ReadLine();
+            //double quotient1 = 100.0 / 17.0;
+            //Console.WriteLine(quotient1);
+            //Console.ReadLine();
 
             //int remainder = 11 % 2;
             //Console.WriteLine(remainder);
@@ -40,12 +40,12 @@ namespace MathAndComparisonOperators
             //Console.WriteLine(trueOrFalse.ToString());
             //Console.ReadLine();
 
-            //int roomTemperature = 70;
-            //int currentTemperature = 70;
+            int roomTemperature = 70;
+            int currentTemperature = 70;
 
-            //bool isWarm = currentTemperature != roomTemperature;
-            //Console.WriteLine(isWarm);
-            //Console.ReadLine();
+            bool isWarm = currentTemperature != roomTemperature;
+            Console.WriteLine(isWarm);
+            Console.ReadLine();
 
 
 
