@@ -15,30 +15,18 @@ namespace TwentyOne
             // this is referring to the property of the class, that's why we dont put a data type or give a variable name
             // instantiate property Cards as an empty list of cards. 
             Cards = new List<Card>();
-            // create a list of Suits
-            List<string> Suits = new List<string>() { "Clubs", "Hearts", "Diamonds", "Spades" };
-            // create a list of Faces
-            List<string> Faces = new List<string>()
+            
+            for (int i = 0; i < 13; i++)
             {
-                "Two", "Three", "Four", "Five", "Six", "Seven",
-                "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace"
-            };
-
-            // loop through list Faces
-            foreach (string face in Faces)
-            {
-                // for every face, loop through Suits
-                foreach (string suit in Suits)
+                for (int j = 0; j < 4; j++)
                 {
-                    // create a new card 
                     Card card = new Card();
-                    // give the card the properties of suit and face that we are looping through. 
-                    card.Suit = suit;
-                    card.Face = face;
-                    // add card to list Cards, a property of deck 
+                    card.Face = (Face)i;
+                    card.Suit = (Suit)j;
                     Cards.Add(card);
                 }
             }
+ 
 
 
         }

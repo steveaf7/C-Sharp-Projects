@@ -10,13 +10,33 @@ namespace TwentyOne
     {
         // the card class has a property of data type string called suit, you can get this property or set this property.
         // public means it's accessible to other parts of the program. 
-        // The constructor method name is always the name of the class that's how C# knows it's a constructor. 
-        public Card()
-        {
-            Suit = "Spades";
-            Face = "Two";
-        }
-        public string Suit { get; set; }
-        public string Face { get; set; }
+        
+
+        public Suit Suit { get; set; }
+        public Face Face { get; set; }
     }
+    public enum Suit
+    {
+        Clubs,
+        Diamonds,
+        Hearts,
+        Spades
+    }
+    public enum Face 
+    { 
+        Two,
+        Three,
+        Four,
+        Five,
+        Six,
+        Seven,
+        Eight,
+        Nine,
+        Ten,
+        Jack,
+        Queen,
+        King, 
+        Ace
+    }
+
 }

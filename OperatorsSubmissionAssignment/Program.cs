@@ -10,6 +10,7 @@ namespace OperatorsSubmissionAssignment
     {
         static void Main(string[] args)
         {
+            // create two employee objects to test overload. 
             Employee emp1 = new Employee() { Id = 1 };
             Employee emp2 = new Employee() { Id = 2 };
             Console.WriteLine(emp1 == emp2);
