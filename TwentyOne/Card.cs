@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {   // a class is just a model it's a design for an object
-    public class Card
+    public struct Card
     {
         // the card class has a property of data type string called suit, you can get this property or set this property.
         // public means it's accessible to other parts of the program. 
