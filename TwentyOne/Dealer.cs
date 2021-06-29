@@ -22,9 +22,10 @@ namespace TwentyOne
             Console.WriteLine(card);
             using (StreamWriter file = new StreamWriter(@"C:\Users\steve\logs\log.txt", true))
             {
+                file.WriteLine(DateTime.Now);
                 file.WriteLine(card);
             }
-                // remove the card that was just dealt.
+            // remove the card that was just dealt.
             Deck.Cards.RemoveAt(0);
         }
     }

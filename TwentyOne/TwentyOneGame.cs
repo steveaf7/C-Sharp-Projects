@@ -109,6 +109,7 @@ namespace TwentyOne
                         else
                         {
                             player.IsActivelyPlaying = false;
+                            return;
                         }
                     }
                 }
