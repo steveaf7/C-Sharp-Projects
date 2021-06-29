@@ -42,8 +42,9 @@ namespace LambdaSubmissionAssignment
 
             // using a lambda expression, create a new list of all employees with an Id greater than 5. 
             List<Employee> idGreaterThan5 = employees.Where(x => x.Id > 5).ToList();
-            
-            // should print '4' three times
+
+            // should print '4' three times, there are four employees with firstName of "Joe"  
+            // and four with an Id > 5.
             Console.WriteLine(newList.Count());
             Console.WriteLine(firstNameJoe.Count());
             Console.WriteLine(idGreaterThan5.Count());

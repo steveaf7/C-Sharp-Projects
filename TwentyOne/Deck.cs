@@ -45,10 +45,14 @@ namespace TwentyOne
 
                 while (Cards.Count > 0)
                 {
+                    // generate a random number between 0 and the length of the Cards list, store as the integer randomIndex
                     int randomIndex = random.Next(0, Cards.Count);
+                    // copy the card at the index randomIndex from Cards to TempList
                     TempList.Add(Cards[randomIndex]);
+                    // delete the copied card from the Cards list. 
                     Cards.RemoveAt(randomIndex);
                 }
+                // add all the cards back to Cards in their new shuffled order. 
                 Cards = TempList;
             }
             return;

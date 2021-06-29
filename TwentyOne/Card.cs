@@ -14,6 +14,13 @@ namespace TwentyOne
 
         public Suit Suit { get; set; }
         public Face Face { get; set; }
+
+        // custom to string method so we can show the player his cards. 
+        public override string ToString()
+        {
+            return string.Format("{0} of {1}", Face, Suit);
+
+        }
     }
     public enum Suit
     {
