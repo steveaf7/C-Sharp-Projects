@@ -21,7 +21,15 @@ namespace FinalChallengeSubmission
                 db.Students.Add(student);
                 db.SaveChanges();
 
-                var query = from 
+                var query = from b in db.Students
+                            select b;
+
+                foreach (var item in query)
+                {
+                    Console.WriteLine(item.StudentName);
+                }
+
+                Console.ReadLine();
             }
         }
     }
