@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    @*customize the cshtml <h2> element with text of your choosing.*@ 
+    <h1 class="display-4">Hello Instructor</h1>
+    @*displays the actual server time in the browser.*@ 
+    <p>@DateTime.Now</p>
+</div>

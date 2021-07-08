@@ -1,0 +1,15 @@
+﻿@using TechAcadStudentsMVC.Models
+@*Below any using statements, we define our model. @model means there is a model and following it is the data type.*@
+@model List<Instructor>
+@{
+  ViewBag.Title = "Instructors";
+}
+
+<h2>Instructors</h2>
+
+@{
+  foreach (Instructor instructor in Model)
+  {
+    <h4>@instructor.FirstName</h4>
+  }
+}
